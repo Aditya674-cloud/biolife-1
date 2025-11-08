@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exoskeleton AR</title>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <style>
-      html, body {
-        margin: 0;
-        height: 100%;
-        background-color: #000;
-      }
-      model-viewer {
-        width: 100%;
-        height: 100vh;
-      }
-    </style>
-  </head>
-  <body>
-    <model-viewer
-      src="Creative%20Experience00005900.glb"
-      alt="Exoskeleton model"
-      ar
-      ar-modes="webxr scene-viewer quick-look"
-      camera-controls
-      auto-rotate
-      shadow-intensity="1"
-      exposure="1"
-      skybox-image="https://modelviewer.dev/shared-assets/environments/moon_1k.hdr"
-      environment-image="neutral"
-      style="background-color: transparent;">
-    </model-viewer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Model Viewer</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+    }
+    model-viewer {
+      width: 100%;
+      height: 100vh;
+      background-color: transparent;
+    }
+  </style>
+</head>
+<body>
+
+  <model-viewer
+    src="Creative%20Experience00005900.glb"
+    ar
+    ar-modes="webxr scene-viewer quick-look"
+    camera-controls
+    auto-rotate
+    shadow-intensity="1"
+    exposure="1"
+    environment-image="neutral"
+    style="background-color: transparent;">
+  </model-viewer>
+
+</body>
 </html>
